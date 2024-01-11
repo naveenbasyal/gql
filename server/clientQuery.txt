@@ -1,0 +1,39 @@
+query getAllQuotes {
+ quotes {
+   by
+   title
+ }
+}
+
+query getAllUsers {
+ users{
+   id
+   name
+   email
+   password   
+ }
+}
+
+query getUserById {
+ getUserById(id: 0) {
+   email
+   id
+   name
+
+   quotes {
+     by
+     title
+     username
+
+   }
+ }
+}
+query getQuoteById {
+  getQuoteById(id: 1) {
+    title
+    username
+    by
+  }
+}
+
+
